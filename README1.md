@@ -1,43 +1,40 @@
-# Salesforce Portfolio – Dhanya N A
+Salesforce Administrator
 
-Welcome to my Salesforce project portfolio.  
-This repository contains Admin, App Builder, Developer and Capstone projects demonstrating real-world Salesforce implementation.
+# Salesforce Security Model Implementation – Stark Corp
 
----
+## Scenario
+Sam, an experienced CRM leader, joined Stark Corp as a Sales Executive with a marketing background. 
+He reports directly to the CEO and requires controlled access to various Salesforce objects and apps.
 
-## 🔹 Salesforce Administrator Projects
-Focus: Flows, Validation Rules, Security, Automation  
+This project demonstrates implementation of Salesforce's multi-layer security model.
 
-🔗 https://github.com/nadhanya17-sys/Salesforce-Administrator-Projects
+# Layer 1: Object-Level Security
 
----
+## Requirement
+Ensure Sam can:
+- View and edit Accounts and Opportunities
+- View Campaigns (marketing background)
+- Not access sensitive HR custom objects
+## Solution Implementation
 
-## 🔹 Salesforce App Builder Projects
-Focus: Custom Objects, Page Layouts, Dynamic Forms, Record Types  
+### Profile Configuration
+- Assigned "Sales Executive" profile to Sam.
+- Enabled:
+  - Read, Create, Edit on Accounts
+  - Read, Create, Edit on Opportunities
+  - Read access on Campaigns
+- Removed access to restricted custom objects.
 
-🔗 https://github.com/nadhanya17-sys/Salesforce-App-Builder-Projects
+### Permission Sets
+To provide additional temporary marketing privileges:
+- Created "Marketing Access" Permission Set
+- Granted Campaign Member edit access
+- Assigned to Sam
 
----
+## Key Concept Clarification
 
-## 🔹 Salesforce Developer Projects
-Focus: Apex Classes, Triggers, SOQL, Sharing, Test Classes  
+Object-level access is controlled by:
+- Profiles (base access)
+- Permission Sets (additional access)
+- OWD (Organization-Wide Defaults) controls record-level access, not object visibility.
 
-🔗 https://github.com/nadhanya17-sys/Salesforce-Developer-Projects
-
----
-
-## 🔹 Salesforce Capstone Project
-End-to-end business implementation project combining Admin and Developer concepts.
-
-🔗 https://github.com/nadhanya17-sys/Salesforce-Capstone-Project
-
----
-
-## 🛠 Skills Demonstrated
-- Record Triggered Flow
-- Approval Process
-- Validation Rules
-- Apex Triggers
-- SOQL & SOSL
-- Security & Sharing
-- Business Requirement Implementation
