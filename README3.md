@@ -57,16 +57,6 @@ After successful submission, the user receives a confirmation message that the C
 
 ---
 
-##  Screenshots
-(Add screenshots of the following)
-
-- Flow structure
-- Screen input fields
-- Create Records configuration
-- Case record created in Salesforce
-
----
-
 ##  Outcome
 - Automated case creation process
 - Reduced manual data entry
